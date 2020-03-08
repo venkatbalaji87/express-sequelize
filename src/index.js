@@ -5,9 +5,6 @@ const helper = require("../src/view/helper/helper");
 const path = require("path");
 const app = express();
 const classDB = require("./config/classDB");
-const darkSkyAPI = require("dark-sky-api");
-const unirest = require("unirest");
-const credentials = require("./apiCredentials.json");
 
 const { QueryTypes } = require("sequelize");
 
