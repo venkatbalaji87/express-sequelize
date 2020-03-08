@@ -1,0 +1,58 @@
+<div class="container">
+  <h1>Below 35 in each subject</h1>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">studentId</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">subject</th>
+        <th scope="col">Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each studentList}}
+      <tr>
+        <th scope="row">{{this.id}}</th>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>Physics</td>
+        <td>{{this.Physics}}</td>
+      </tr>
+      {{/each}}
+      {{#each studentList1}}
+      <tr>
+        <th scope="row">{{this.id}}</th>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>Chemistry</td>
+        <td>{{this.Chemistry}}</td>
+      </tr>
+      {{/each}} {{#each studentList2}}
+      <tr>
+        <th scope="row">{{this.id}}</th>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>Maths</td>
+        <td>{{this.Maths}}</td>
+      </tr>
+      {{/each}} {{#each studentList3}}
+      <tr>
+        <th scope="row">{{this.id}}</th>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>Tamil</td>
+        <td>{{this.tamil}}</td>
+      </tr>
+      {{/each}} {{#each studentList4}}
+      <tr>
+        <th scope="row">{{this.id}}</th>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>English</td>
+        <td>{{this.English}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,69 @@
+<!--Navbar-->
+
+
+
+<!--Tables-->
+
+<div class="container" style="padding-top: 20px;">
+  <h1>Student Details</h1>
+
+  <table class="table" style="margin-top : 30px;">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Subject</th>
+        <th scope="col">Marks</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {{#each studentList}}
+      <tr>
+        <th scope="row">1</th>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>Physics</td>
+        <td>{{this.max}}</td>
+      </tr>
+      {{/each}}
+      {{#each studentList1}}
+      <tr>
+        <th scope="row">2</th>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>Chemistry</td>
+        <td>{{this.max}}</td>
+      </tr>
+      {{/each}}
+      {{#each studentList2}}
+      <tr>
+        <th scope="row">3</th>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>Maths</td>
+        <td>{{this.max}}</td>
+      </tr>
+      {{/each}}
+      {{#each studentList3}}
+      <tr>
+        <th scope="row">4</th>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>Tamil</td>
+        <td>{{this.max}}</td>
+      </tr>
+      {{/each}}
+      {{#each studentList4}}
+      <tr>
+        <th scope="row">5</th>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>English</td>
+        <td>{{this.max}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

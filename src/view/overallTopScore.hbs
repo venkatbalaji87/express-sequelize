@@ -1,0 +1,31 @@
+<!--Navbar-->
+
+
+
+<!--Tables-->
+
+<div class="container" style="padding-top: 20px;">
+  <h1>Student Details</h1>
+
+  <table class="table" style="margin-top : 30px;">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Overall Max Score</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {{#each studentList}}
+      <tr>
+        <th scope="row">1</th>
+        <td>{{this.first_name}}</td>
+        <td>{{this.last_name}}</td>
+        <td>{{this.max}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

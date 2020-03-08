@@ -1,0 +1,58 @@
+<!--Navbar-->
+
+
+
+<!--Tables-->
+
+<div class="container" style="padding-top: 20px;">
+  <h1>Student Details</h1>
+
+  <table class="table" style="margin-top : 30px;">
+    <thead>
+      <tr>
+        <th scope="col">S.No</th>
+        <th scope="col">Subject</th>
+        <th scope="col">Marks</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      {{#each studentList}}
+      <tr>
+        <th scope="row">1</th>
+
+        <td>Physics</td>
+        <td>{{this.avg}}</td>
+      </tr>
+      {{/each}}
+      {{#each studentList1}}
+      <tr>
+        <th scope="row">2</th>
+        <td>Chemistry</td>
+        <td>{{this.avg}}</td>
+      </tr>
+      {{/each}}
+      {{#each studentList2}}
+      <tr>
+        <th scope="row">3</th>
+        <td>Maths</td>
+        <td>{{this.avg}}</td>
+      </tr>
+      {{/each}}
+      {{#each studentList3}}
+      <tr>
+        <th scope="row">4</th>
+        <td>Tamil</td>
+        <td>{{this.avg}}</td>
+      </tr>
+      {{/each}}
+      {{#each studentList4}}
+      <tr>
+        <th scope="row">5</th>
+        <td>English</td>
+        <td>{{this.avg}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
